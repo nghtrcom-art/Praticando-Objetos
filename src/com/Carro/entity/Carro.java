@@ -4,20 +4,19 @@ public class Carro {
 
     private String modelo;
     private float valor;
-    public static int valorTotal;
+    public static float valorTotal;
 
     public Carro(String modelo, float valor){
 
         this.modelo = modelo;
         this.valor = valor;
-    }
-    public void valorTotal(){
 
-
+        valorTotal += valor;
     }
+
     public void exibeCarro(){
 
         System.out.println("Modelo: " + modelo);
-        System.out.println("Valor " + valor);
+        System.out.println("Valor " + valor + "\n");
     }
 }
