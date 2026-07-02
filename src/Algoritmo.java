@@ -11,6 +11,7 @@ public class Algoritmo {
         quantCar = sc.nextInt();
         Carro[] carros = new Carro[quantCar];
 
+        int soma = quantCar;
         for (int i = 0; i < quantCar; i++) {
 
             sc.nextLine();
@@ -22,10 +23,12 @@ public class Algoritmo {
             float valor = sc.nextFloat();
             sc.nextLine();
 
+
             carros[i] = new Carro (modelo, valor);
         }
 
         System.out.println("Os dados cadastrados foram:\n");
+        System.out.println("Quantidade de carros cadastrados: " + quantCar);
         for (int i = 0; i < quantCar; i++) {
 
             carros[i].exibeCarro();
