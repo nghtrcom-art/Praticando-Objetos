@@ -32,7 +32,7 @@ public class Algoritmo {
         }
 
         //Exibição das informações cadastradas.
-        System.out.println("Os dados cadastrados foram:\n");
+        System.out.println("Os dados cadastrados foram:");
         System.out.println("Quantidade de carros cadastrados: " + quantCar);
         for (int i = 0; i < quantCar; i++) {
 
